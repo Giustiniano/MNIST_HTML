@@ -1,3 +1,4 @@
 import * as tf from '@tensorflow/tfjs';
 
-const model = await tf.loadLayersModel('model/model.json');
+
+const model = tf.loadLayersModel('model/model.json').then(function(model){alert("model loaded")})
